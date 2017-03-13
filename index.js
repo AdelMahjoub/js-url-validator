@@ -7,12 +7,16 @@ const urlPatterns = {
 };
 
 module.exports = (str) => {
+  
   if(typeof str === "string") {
+
     if(urlPatterns.full.test(str) || urlPatterns.noProtocol.test(str)) {
-      //full qualified domain name
-      let fqdn; 
+
+      let fqdn; //full qualified domain name 
       fqdn = url.parse(str).protocol ? url.parse(str).hostname : url.parse(str).href;
+
       if(fqdn.length > urlPatterns.maxLength) {
+        
         return false;
       }
       return true;
