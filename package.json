@@ -1,0 +1,33 @@
+{
+  "name": "url-validator",
+  "version": "1.0.0",
+  "description": "validate url",
+  "main": "index.js",
+  "engine": {
+    "node": "6.10.0"
+  },
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "mocha",
+    "start": "node index",
+    "grunt": "grunt"
+  },
+  "keywords": [
+    "url",
+    "nodejs",
+    "validator",
+    "http",
+    "validate-url",
+    "node-url-validator"
+  ],
+  "author": "Adel Mahjoub",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.5.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-contrib-watch": "1.0.0",
+    "mocha": "3.2.0"
+  }
+}
