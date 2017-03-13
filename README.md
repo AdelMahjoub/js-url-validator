@@ -1,5 +1,6 @@
 # URL validator
 Check if a given string is a valid url.
+
 ## install 
 ```
 $ npm install --save url_validator
