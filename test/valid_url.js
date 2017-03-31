@@ -21,12 +21,6 @@ describe("is a valid url: ", () => {
     expect(isValidUrl("google.com")).to.equal(true);
   });
 
-  it("url with www. if www is followed by dot", function() {
-    expect(isValidUrl("http://.google.com")).to.equal(false);
-    expect(isValidUrl("http://www.google.com")).to.equal(true);
-    expect(isValidUrl("http://ww.google.com")).to.equal(false);
-  });
-
   it("url without www.", function() {
     expect(isValidUrl("http://google.com")).to.equal(true);
     expect(isValidUrl("https://google.com")).to.equal(true);
@@ -36,7 +30,7 @@ describe("is a valid url: ", () => {
     expect(isValidUrl("http://google")).to.equal(false);
     expect(isValidUrl("https://google.")).to.equal(false);
     expect(isValidUrl("http://google.com")).to.equal(true);
-    expect(isValidUrl("https://google.b")).to.equal(true);
+    expect(isValidUrl("https://google.b")).to.equal(false);
   });
 
   it("url with a hostname ", function() {
