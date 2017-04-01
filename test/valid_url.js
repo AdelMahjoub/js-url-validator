@@ -49,6 +49,7 @@ describe("is a valid url: ", () => {
     expect(isValidUrl("awsome-url.com-")).to.equal(false);
     expect(isValidUrl("-awsome-url.com")).to.equal(false);
     expect(isValidUrl("-awsome-url.-com")).to.equal(false);
+    expect(isValidUrl("awsome-url-.com")).to.equal(false);
   });
 
   it("do not validate other than strings", function() {

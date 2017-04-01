@@ -1,6 +1,6 @@
 const url = require("url");
 
-const urlPatter = /^(https?:\/\/)?[^-][a-z0-9.-]+\.[a-z]{2,4}$/;
+const urlPatter = /^(https?:\/\/)?[^-][a-z0-9.-]+[^-]\.[a-z]{2,4}$/;
 
 module.exports = (str) => {
   
